@@ -18,25 +18,18 @@ public class Primes {
                     q = q + p;
                 }
 
-                p++;
             }
+            p++;
         }
-        for (int i = 0; i < arry.length; i++) {
+
+        System.out.println("Prime numbers up to " + n + ":");
+        for (int i = 2; i <= n; i++) {
             if (arry[i] == true) {
+                System.out.println(i);
                 count++;
             }
         }
-        System.err.println("Prime numbers up to " + n + ":" );
-        for (int i = 2; i <= n; i++) { 
-            if (arry[i] == true) {
-                System.err.println(i);
-                count++;
-            }
-        }System.out.println("There are " + count + " primes between 2 and " + n + 
-                   " (" + (100 * count) / n + "% are primes)");
+        System.out.println("There are " + count + " primes between 2 and " + n
+                + " (" + (100 * count) / n + "% are primes)");
     }
 }
-
-// we need to go over all of the numbers from n and on 
-// then we'll need to cross out the numbers of 
-
